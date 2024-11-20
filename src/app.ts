@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import cors from "cors";
 import express, { Application, Request, Response } from "express";
-import routes from "./routes/index.ts";
+import routes from "./routes/index";
 const app: Application = express();
 app.use(
   cors({

@@ -2,8 +2,8 @@ import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config.env" });
 import http from "http";
-import app from "./app.ts";
-import connectDB from "./DB/db.ts";
+import app from "./app";
+import connectDB from "./DB/db";
 // Load environment variables from .env file
 
 const server = http.createServer(app);

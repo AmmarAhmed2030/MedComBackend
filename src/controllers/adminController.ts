@@ -1,13 +1,13 @@
 import { Request, Response, NextFunction } from "express";
-import cloudinary from "../utils/cloudinary.ts"; // Adjust the import if needed
+import cloudinary from "../utils/cloudinary"; // Adjust the import if needed
 import bcrypt from "bcryptjs";
-import doctorModel from "../models/doctorModel.ts"; // Adjust the import if needed
-import doctorValidationBody from "../validations/doctor/doctorValidationBody.ts";
+import doctorModel from "../models/doctorModel"; // Adjust the import if needed
+import doctorValidationBody from "../validations/doctor/doctorValidationBody";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
-import loginValidationSchema from "../validations/doctor/login.ts";
-import appointmentModel from "../models/appointmentModel.ts";
-import userModel from "../models/userModel.ts";
+import loginValidationSchema from "../validations/doctor/login";
+import appointmentModel from "../models/appointmentModel";
+import userModel from "../models/userModel";
 dotenv.config({ path: "./config.env" });
 const addDoctor = async (
   req: Request,
